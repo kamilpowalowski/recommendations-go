@@ -1,0 +1,6 @@
+github.com/fauna/faunadb-go v2.0.0+incompatible h1:b+iaebxQ37qQtQCEYpfatxeZVF+L0HTBTTrCMcV8itI=
+github.com/fauna/faunadb-go v2.0.0+incompatible/go.mod h1:WYAh1hNDFEgbsKKeUhsHPGIFkpQ1CGn/5XejAFfOhHg=
+github.com/gorilla/mux v1.7.2 h1:zoNxOV7WjqXptQOVngLmcSQgXmgk4NMz1HibBchjl/I=
+github.com/gorilla/mux v1.7.2/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
+github.com/muesli/regommend v0.0.0-20190424060247-e879bb52e08f h1:p0CCSkeVlYxCY55OoffcJCCofgaVMzT2fvhqF6rnmoA=
+github.com/muesli/regommend v0.0.0-20190424060247-e879bb52e08f/go.mod h1:XuhGhpHEFftJpGdzVGm7l6dSzMJdiZFKXrdOVQTGzHI=

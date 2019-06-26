@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "recommendations-as-a-service",
+		"_postman_id": "0bc9f9fe-bea7-c2a4-09f8-db6d4bb3734e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "like item",
+			"request": {
+				"url": "http://localhost:3000/api/users/username/like/100",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic secrettoken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete like item",
+			"request": {
+				"url": "http://localhost:3000/api/users/username/like/100",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic secrettoken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "dislike item",
+			"request": {
+				"url": "http://localhost:3000/api/users/username/dislike/101",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic secrettoken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete dislike item",
+			"request": {
+				"url": "http://localhost:3000/api/users/username/dislike/101",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic secrettoken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get recommendations",
+			"request": {
+				"url": "http://localhost:3000/api/users/username/recommendations",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic secrettoken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "recommendations-as-a-service",
+  "builds": [
+    { "src": "www/**/*", "use": "@now/static" },
+    { "src": "api/index.go", "use": "@now/go" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "www/index.html" },
+    { "src": "/api/(.*)", "dest": "api/index.go" }
+  ],
+  "env": {
+    "FAUNADB_SECRET_KEY": "@faunadb-secret-key-recommendations"
+  }
+}
