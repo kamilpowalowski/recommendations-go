@@ -1,0 +1,88 @@
+FORMAT: 1A
+
+# Recommendations as a Service
+API specyfication for recommendations service written in Go.
+
+# Group Users
+Endpoints related to adding and removing id of object that user likes/dislikes and to get recommendations for given user.
+
+## Like [/api/users/{user_id}/like/{item_id}]
+### Add new like to database [PUT]
++ Parameters
+    + user_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64} 
+    + item_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64}
+
++ Request
+    + Header
+
+            Authorization: Basic [a-zA-Z0-9]{1,128}
+
++ Response 200 (application/json)
+
+        {}
+
+### Remove like from database [DELETE]
++ Parameters
+    + user_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64} 
+    + item_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64}
+
++ Request
+    + Header
+
+            Authorization: Basic [a-zA-Z0-9]{1,128}
+
++ Response 200 (application/json)
+
+        {}
+
+## Dislike [/api/users/{user_id}/dislike/{item_id}]
+### Add new dislike to database [PUT]
++ Parameters
+    + user_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64} 
+    + item_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64}
+
++ Request
+    + Header
+
+            Authorization: Basic [a-zA-Z0-9]{1,128}
+
++ Response 200 (application/json)
+
+        {}
+
+### Remove dislike from database [DELETE]
++ Parameters
+    + user_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64} 
+    + item_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64}
+
++ Request
+    + Header
+
+            Authorization: Basic [a-zA-Z0-9]{1,128}
+
++ Response 200 (application/json)
+
+        {}
+
+## Recommendations [/api/users/{user_id}/recommendations]
+### Get recommendations for given user [GET]
++ Parameters
+    + user_id (string) - should be a string that fit to regex [a-zA-Z0-9]{1,64} 
+
++ Request
+    + Header
+
+            Authorization: Basic [a-zA-Z0-9]{1,128}
+
++ Response 200 (application/json)
+
+        [
+            {
+                "item_id": "jedi",
+                "distance": 1
+            },
+            {
+                "item_id": "sith",
+                "distance": 0.5
+            }
+        ]

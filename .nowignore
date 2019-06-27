@@ -1,5 +1,7 @@
 README.md
 ZEIT.md
-LICENCE
+LICENSE
 .env.sample
 recommendations-as-a-service.postman_collection.json
+www/README.md
+www/recommendations.apib
